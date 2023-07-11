@@ -13,3 +13,17 @@ export async function postStartProcess(body: RegisterCandidateBody) {
 
   return response.data;
 }
+
+interface CandidateIdBody {
+  codCandidato: number;
+}
+
+export async function postSchedule(body: CandidateIdBody) {
+  const response = await api.post("/schedule", body, {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+
+  return response.data;
+}
