@@ -13,6 +13,7 @@ export const Title = styled.h1`
   font-weight: 700;
   font-family: "Alkatra", cursive;
   margin-top: 2rem;
+  text-align: center;
 `;
 
 export const FormContainer = styled.div`
@@ -44,11 +45,14 @@ export const CandidateInfo = styled.div`
 export const BackToHome = styled.div`
   display: flex;
   justify-content: center;
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
-  font-family: 700;
-  text-decoration: underline;
-  color: #000;
   margin-top: 10rem;
   cursor: pointer;
+
+  p {
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-family: 700;
+    text-decoration: underline;
+    color: #000;
+  }
 `;

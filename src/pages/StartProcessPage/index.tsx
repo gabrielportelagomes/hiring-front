@@ -77,9 +77,11 @@ export default function StartProcessPage() {
         {registerCandidateLoading ? (
           <Style.BackToHome>Voltar para o início</Style.BackToHome>
         ) : (
-          <Link to={"/"}>
-            <Style.BackToHome>Voltar para o início</Style.BackToHome>
-          </Link>
+          <Style.BackToHome>
+            <Link to={"/"}>
+              <p>Voltar para o início</p>
+            </Link>
+          </Style.BackToHome>
         )}
       </Style.FormContainer>
     </Style.Container>
