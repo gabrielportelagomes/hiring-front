@@ -37,3 +37,13 @@ export async function postDisqualify(body: CandidateIdBody) {
 
   return response.data;
 }
+
+export async function postApprove(body: CandidateIdBody) {
+  const response = await api.post("/approve", body, {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+
+  return response.data;
+}
