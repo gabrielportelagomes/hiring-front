@@ -27,3 +27,13 @@ export async function postSchedule(body: CandidateIdBody) {
 
   return response.data;
 }
+
+export async function postDisqualify(body: CandidateIdBody) {
+  const response = await api.post("/disqualify", body, {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+
+  return response.data;
+}
