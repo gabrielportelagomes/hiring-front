@@ -47,3 +47,9 @@ export async function postApprove(body: CandidateIdBody) {
 
   return response.data;
 }
+
+export async function getStatus(id: number) {
+  const response = await api.get(`/status/candidate/${id}`);
+
+  return response.data;
+}
