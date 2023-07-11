@@ -32,15 +32,6 @@ export const Form = styled.form`
   align-items: center;
 `;
 
-export const CandidateInfo = styled.div`
-  display: flex;
-  justify-content: center;
-  font-size: 1.5rem;
-  font-family: 'Roboto', sans-serif;
-  font-family: 700;
-  margin-top: 3rem;
-`;
-
 export const BackToHome = styled.div`
   display: flex;
   justify-content: center;
