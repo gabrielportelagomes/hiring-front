@@ -4,7 +4,7 @@ import * as Style from "./style";
 export default function HomePage() {
   const pages = [
     { title: "Cadastrar Candidato", path: "/iniciar" },
-    { title: "Marcar Entrevista", path: "/entrevista" },
+    { title: "Agendar Entrevista", path: "/entrevista" },
     { title: "Desqualificar Candidato", path: "/desqualificar" },
     { title: "Aprovar Candidato", path: "/aprovar" },
     { title: "Verificar Status do Candidato", path: "/status" },
