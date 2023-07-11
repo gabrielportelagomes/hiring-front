@@ -14,12 +14,8 @@ interface FormData {
 }
 
 export default function StartProcessPage() {
-  const {
-    registerCandidate,
-    registerCandidateLoading,
-    registerCandidateError,
-    postRegisterCandidate,
-  } = useSaveCandidate();
+  const { registerCandidateLoading, postRegisterCandidate } =
+    useSaveCandidate();
   const [form, setForm] = useState<FormData>({
     nome: "",
   });
@@ -78,15 +74,14 @@ export default function StartProcessPage() {
             Código do candidato: {candidateCode}
           </Style.CandidateInfo>
         )}
-          {registerCandidateLoading ? (
-        <Style.BackToHome>Voltar para o início</Style.BackToHome>
-      ) : (
-        <Link to={"/"}>
+        {registerCandidateLoading ? (
           <Style.BackToHome>Voltar para o início</Style.BackToHome>
-        </Link>
-      )}
+        ) : (
+          <Link to={"/"}>
+            <Style.BackToHome>Voltar para o início</Style.BackToHome>
+          </Link>
+        )}
       </Style.FormContainer>
-    
     </Style.Container>
   );
 }
