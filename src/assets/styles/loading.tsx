@@ -14,4 +14,4 @@ export const loadingButton = (
   />
 );
 
-export const loadingPage = <RotatingLines strokeColor="#ffffff" width="100" />;
+export const loadingPage = <RotatingLines strokeColor="#000" width="100" />;
