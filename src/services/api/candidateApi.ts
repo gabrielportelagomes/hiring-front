@@ -53,3 +53,9 @@ export async function getStatus(id: number) {
 
   return response.data;
 }
+
+export async function getApprovedCandidate() {
+  const response = await api.get("/approved");
+
+  return response.data;
+}
