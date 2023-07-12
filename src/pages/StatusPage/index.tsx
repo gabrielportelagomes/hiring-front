@@ -65,7 +65,7 @@ export default function StatusPage() {
             required
           />
           <ButtonForm type="submit" disabled={candidateStatusLoading}>
-            {candidateStatusLoading ? loadingButton : "Cadastrar"}
+            {candidateStatusLoading ? loadingButton : "Buscar"}
           </ButtonForm>
         </Style.Form>
         {candidateStatus && (
